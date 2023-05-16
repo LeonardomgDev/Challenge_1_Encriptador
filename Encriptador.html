@@ -5,26 +5,57 @@
     <head>
 
         <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Encriptador | First Challenge</title> <!--Sujeto a cambios, no me convence-->
         <link rel = "stylesheet" href = "reset.css">
         <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
 
+        <header class = "logo_alura">
+
+            <img class ="logo" src = "Imagenes/Frame 6.png" alt = "Logo Alura">
+
+        </header>
+
         <main class = "main">
 
-            <section class = "logo_alura">
-
-            </section>
-
             <section class = "cuadro_texto">
+
+                <textarea class = "area_texto" cols = "30" rows = "10" placeholder = "Ingrese el texto aquí:"></textarea>
+
+                <div class = "pie_texto">
+
+                    <small>Solo letras minúsculas y sin acentos.</small>
+
+                </div>
+
+                <div class = "botones">
+
+                    <button class = "boton_encriptar">Encriptar</button>
+
+                    <button class = "boton_desencriptar">Desencriptar</button>
+
+                </div>
 
             </section>
 
             <section class = "cuadro_encriptado">
-                
+
+                <textarea class = "mensaje_encriptado" cols = "30" rows = "10"></textarea>
+
+                <div class = "copiar">
+
+                    <button class = "boton_copiar">Copiar</button>
+
+                </div>
+
             </section>
 
         </main>
