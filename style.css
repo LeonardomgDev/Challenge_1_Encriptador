@@ -19,8 +19,8 @@
 main {
 
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-left: 180px;
 
 }
 
@@ -28,8 +28,10 @@ main {
 
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin-top: 30px;
     text-transform: lowercase;
+    height: 400px;
+    padding: 2px;
 
 }
 
@@ -41,10 +43,9 @@ main {
 
     }
 
-    .mensaje_encriptado {
+    .mensaje {
 
         outline: none;
-
 
     }
 
@@ -60,10 +61,13 @@ main {
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    height: 630px;
+    background-position: center;
+
 
 }
 
-.mensaje_encriptado:focus {
+.mensaje:focus {
 
     outline: none;
 
@@ -109,8 +113,8 @@ main {
     cursor: pointer;
     width: 336px;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    margin-left: 120px;
+    margin-top: 565px;
     position: absolute;
 
 }
@@ -119,4 +123,5 @@ main {
 
     color: #495057;
     font-size: 18px;
+    
 }

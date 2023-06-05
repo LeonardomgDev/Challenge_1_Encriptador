@@ -66,3 +66,11 @@ function boton_desencriptar(){
     //La función realiza la llamada a la función "desencriptacion" y muestra el mensaje desencriptado
 
 }
+
+function boton_copiar(){
+
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value);
+    mensaje.value = "";
+    //Funcionalidad para copiar el texto al portapapeles
+}
