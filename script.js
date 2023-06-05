@@ -29,7 +29,7 @@ function boton_encriptar(){
     const texto_encriptado = encriptacion(area_texto.value);
     mensaje.value = texto_encriptado;
     area_texto.value = "";
-    mensaje_encriptado.style.backgroundImage = "none";
+    mensaje.style.backgroundImage = "none";
     //La función realiza la llamada a la función "encriptacion" y muestra el mensaje encriptado
 
 }
@@ -42,7 +42,7 @@ function desencriptacion(str_desencriptada){
     for(let n = 0; n < matriz_codigo.length; n++){
     //Este for va a contener la operación de sustitución durante toda la longitud de la string proporcionada por el usuario
 
-        if(str_encriptada.includes(matriz_codigo[n][1])){
+        if(str_desencriptada.includes(matriz_codigo[n][1])){
         //Este if va a corroborar si existe un valor dentro de nuestra matriz de sustitución y lo va a reemplazar
 
             str_desencriptada = str_desencriptada.replaceAll(matriz_codigo[n][1], matriz_codigo[n][0]);
@@ -62,6 +62,7 @@ function boton_desencriptar(){
     const texto_desencriptado = desencriptacion(area_texto.value);
     mensaje.value = texto_desencriptado;
     area_texto.value = "";
+    mensaje.style.backgroundImage = "none";
     //La función realiza la llamada a la función "desencriptacion" y muestra el mensaje desencriptado
 
 }
